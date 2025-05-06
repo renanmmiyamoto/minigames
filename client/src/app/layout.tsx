@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { JetBrains_Mono, Open_Sans } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/header'
+import { Sidebar } from '@/components/sidebar'
+import { cn } from '@/lib/utils'
 
 const openSans = Open_Sans({
 	variable: '--font-open-sans',
@@ -40,8 +43,15 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${openSans.variable} ${jetBrainsMono.variable} bg-background antialiased`}
+				className={cn(
+					`${openSans.variable} ${jetBrainsMono.variable} flex min-h-screen w-screen flex-col items-stretch bg-primary-900 antialiased`,
+					'sm:flex-row',
+				)}
 			>
+				<Sidebar />
+
+				<Header />
+
 				{children}
 			</body>
 		</html>
