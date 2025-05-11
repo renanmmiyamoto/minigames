@@ -25,7 +25,7 @@ export function Sidebar() {
 	return (
 		<aside
 			className={cn(
-				'hidden w-20 flex-col gap-y-15 bg-primary-800 pt-15 pl-2',
+				'scrollbar hidden max-h-screen w-20 flex-col gap-y-15 overflow-y-auto bg-primary-800 pt-15 pl-2',
 				'sm:flex',
 				'lg:w-3/12 lg:min-w-2xs lg:max-w-80 lg:pl-10',
 			)}

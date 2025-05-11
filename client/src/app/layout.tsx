@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { Sidebar } from '@/components/sidebar'
 import { cn } from '@/lib/utils'
+import { Toaster } from 'sonner'
 
 const openSans = Open_Sans({
 	variable: '--font-open-sans',
@@ -44,15 +45,20 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={cn(
-					`${openSans.variable} ${jetBrainsMono.variable} flex min-h-screen w-screen flex-col items-stretch bg-primary-900 antialiased`,
+					`${openSans.variable} ${jetBrainsMono.variable} flex min-h-screen w-screen flex-col items-stretch overflow-hidden bg-primary-900 antialiased`,
 					'sm:flex-row',
 				)}
 			>
 				<Sidebar />
-
 				<Header />
 
-				{children}
+				<div
+					className={cn('scrollbar max-h-screen w-full overflow-y-auto py-15')}
+				>
+					{children}
+				</div>
+
+				<Toaster richColors />
 			</body>
 		</html>
 	)
