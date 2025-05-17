@@ -15,7 +15,7 @@ const buttonVariants = tv({
 				'bg-slate-600 text-white hover:bg-slate-700 focus:bg-slate-800 active:bg-slate-900',
 		},
 		size: {
-			default: 'px-6 py-2 text-md',
+			default: 'px-6 py-2',
 		},
 	},
 	defaultVariants: {

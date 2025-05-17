@@ -32,6 +32,7 @@ export default function TicTacToe() {
 							toast.dismiss()
 						}}
 						variant="green"
+						className="ml-auto"
 					>
 						New game
 					</Button>
@@ -54,6 +55,7 @@ export default function TicTacToe() {
 							toast.dismiss()
 						}}
 						variant="slate"
+						className="ml-auto"
 					>
 						New game
 					</Button>
