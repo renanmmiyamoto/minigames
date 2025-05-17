@@ -45,7 +45,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={cn(
-					`${openSans.variable} ${jetBrainsMono.variable} flex min-h-screen w-screen flex-col items-stretch overflow-hidden bg-primary-900 antialiased`,
+					`${openSans.variable} ${jetBrainsMono.variable} flex min-h-screen w-screen flex-col items-stretch bg-primary-900 antialiased sm:overflow-hidden`,
 					'sm:flex-row',
 				)}
 			>
@@ -53,7 +53,9 @@ export default function RootLayout({
 				<Header />
 
 				<div
-					className={cn('scrollbar max-h-screen w-full overflow-y-auto py-15')}
+					className={cn(
+						'scrollbar w-full overflow-y-auto py-8 sm:max-h-screen md:py-15',
+					)}
 				>
 					{children}
 				</div>

@@ -43,7 +43,7 @@ The app will be available at http://localhost:3000
 
 Here's a checklist of game ideas planned for future development:
 - [x] Tic Tac Toe
-- [ ] Memory Match
+- [x] Memory Match
 - [ ] Guess song
 - [ ] Guess word (5 letter)
 - [ ] Guess the country
