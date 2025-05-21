@@ -36,7 +36,8 @@
 		"formatter": {
 			"arrowParentheses": "always",
 			"quoteStyle": "single",
-			"semicolons": "asNeeded"
+			"semicolons": "asNeeded",
+			"lineWidth": 100
 		}
 	}
 }

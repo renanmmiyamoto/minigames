@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { Brain, Hash, House } from 'lucide-react'
+import { Brain, Hash, House, Music } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -21,6 +21,11 @@ export const menuItems = [
 		icon: <Brain size={22} />,
 		title: 'Memory Match',
 		link: '/games/memory-match',
+	},
+	{
+		icon: <Music size={22} />,
+		title: 'Guess the song',
+		link: '/games/guess-song',
 	},
 ] as const
 
